@@ -30,7 +30,8 @@ jobs:
           command: |
             cd /home/circleci/project/
             ls -lrt /home/circleci/project/
-            mvn clean verify sonar:sonar -Dsonar.projectKey=SonarQube-Project -Dsonar.projectName='SonarQube-Project' -Dsonar.host.url=http://10.24.42.90:9000 -Dsonar.token=sqp_f4c88a656a835b19d2e13818e7adaf86f44a7de2
+            # mvn clean verify sonar:sonar -Dsonar.projectKey=SonarQube-Project -Dsonar.projectName='SonarQube-Project' -Dsonar.host.url=http://10.24.42.90:9000 -Dsonar.token=sqp_f4c88a656a835b19d2e13818e7adaf86f44a7de2
+            mvn clean verify sonar:sonar -Dsonar.projectKey=sonar-project -Dsonar.projectName='sonar-project' -Dsonar.host.url=http://localhost:9002 -Dsonar.token=sqp_2cc6e009ff85c814ddaa94b7b2370579242025cf
       
 workflows:
   main-workflow:
