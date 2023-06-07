@@ -13,7 +13,7 @@ jobs:
           command: |
             cd /home/circleci/project/
             ls -lrt /home/circleci/project/
-            mvn clean verify sonar:sonar -Dsonar.projectKey=sonar-project -Dsonar.projectName='sonar-project' -Dsonar.host.url=http://ec2-3-110-118-101.ap-south-1.compute.amazonaws.com:9000 -Dsonar.token=sqp_f0dc3d706865eaf72e76fc0147b4d43a64dc011c
+            mvn clean verify sonar:sonar -Dsonar.projectKey=dhanu0001_Sonar-demo_AYiWbNxBgP3BeHF7u6gB -Dsonar.projectName='dhanu0001_Sonar-demo_AYiWbNxBgP3BeHF7u6gB' -Dsonar.host.url=http://ec2-3-110-118-101.ap-south-1.compute.amazonaws.com:9000 -Dsonar.token=sqp_f0dc3d706865eaf72e76fc0147b4d43a64dc011c
 workflows:
   main-workflow:
     jobs:
