@@ -48,14 +48,14 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@7295e71c9583053f5bf40e9d4068a0c974603ec8
         env:
           GITHUB_TOKEN: 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  # Needed to get PR information
-          SONAR_TOKEN: sqp_f0dc3d706865eaf72e76fc0147b4d43a64dc011c   # Generate a token on SonarQube, add it to the secrets of this repo with the name SONAR_TOKEN (Settings > Secrets > Actions > add new repository secret)
+          SONAR_TOKEN: sqp_d9c4ab7fcfcefbe80f400e73bba55edc0399c3f1   # Generate a token on SonarQube, add it to the secrets of this repo with the name SONAR_TOKEN (Settings > Secrets > Actions > add new repository secret)
           SONAR_HOST_URL: http://ec2-3-110-118-101.ap-south-1.compute.amazonaws.com:9000   # add the URL of your instance to the secrets of this repo with the name SONAR_HOST_URL (Settings > Secrets > Actions > add new repository secret)
         with:
           # Additional arguments for the sonarcloud scanner
           args:
             # Unique key of your project. You can find it in SonarQube > [my project] > Project Information (top-right menu)
             # mandatory
-            -Dsonar.projectKey=dhanu0001_Sonar-demo_AYiWbNxBgP3BeHF7u6gB
+            -Dsonar.projectKey=dhanu0001_sonar-project_AYiWm35rgP3BeHF7u6gP
             # Comma-separated paths to directories containing main source files.
             #-Dsonar.sources= # optional, default is project base directory
             # When you need the analysis to take place in a directory other than the one from which it was launched
